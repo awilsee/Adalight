@@ -73,6 +73,10 @@ static uint8_t
 static const unsigned long serialTimeout = 15000; // 15 seconds
 static unsigned long       lastByteTime, lastAckTime;
 
+//declaring functions
+static boolean timeout(unsigned long t, int nLEDs);
+static void latch(int n);
+
 void setup() {
   byte c;
   int  i, p;
